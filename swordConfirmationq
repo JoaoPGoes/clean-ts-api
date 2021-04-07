@@ -1,0 +1,35 @@
+[34m240373f[31m (HEAD -> master) [37mtest: ensure SignUpController returns 400 if passwordConfirmation fails - [36mJoaoPGoes, [32m71 seconds ago
+[34mf0381c8[31m [37mfeat: ensure SignUpController returns 400 if passwordConfirmation fails - [36mJoaoPGoes, [32m2 minutes ago
+[34m9eccd3b[31m [37mrefactor: change mocking strategy - [36mJoaoPGoes, [32m5 minutes ago
+[34m8da530d[31m [37mrefactor: move EmailValidator creation to a factory helper method - [36mJoaoPGoes, [32m11 hours ago
+[34m1420204[31m [37mrefactor: move all protocols imports to a single file - [36mJoaoPGoes, [32m12 hours ago
+[34md78b0d4[31m [37mrefactor: move all error imports to a single file - [36mJoaoPGoes, [32m12 hours ago
+[34m0996ab4[31m [37mrefactor: move server error to a helper method - [36mJoaoPGoes, [32m12 hours ago
+[34m2acf47c[31m [37mtest: ensure SignUpController returns 500 if email validator throws - [36mJoaoPGoes, [32m12 hours ago
+[34mf0d44d3[31m [37mfeat: ensure SignUpController returns 500 if email validator throws - [36mJoaoPGoes, [32m12 hours ago
+[34m52fc685[31m [37mtest: ensure SignUpController calls EmailValidator with correct email - [36mJoaoPGoes, [32m12 hours ago
+[34md177ee2[31m [37mtest: ensure SignUpController returns 400 if an invalid email is provided - [36mJoaoPGoes, [32m16 hours ago
+[34m7c9480a[31m [37mfeat: ensure SignUpController returns 400 if an invalid email is provided - [36mJoaoPGoes, [32m16 hours ago
+[34m83e976c[31m [37mrefactor: move sut creation to a factory helper method - [36mJoaoPGoes, [32m17 hours ago
+[34m216a291[31m [37mrefactor: make SignUpController conforms to a protocol - [36mJoaoPGoes, [32m17 hours ago
+[34mfa0be96[31m [37mtest: ensure SignUpController returns 400 if no passwordConfirmation is provided - [36mJoaoPGoes, [32m17 hours ago
+[34me01daff[31m [37mfeat: ensure SignUpController returns 400 if no passwordConfirmation is provided - [36mJoaoPGoes, [32m17 hours ago
+[34m0c34e8b[31m [37mtest: ensure SignUpController returns 400 if no password is provided - [36mJoaoPGoes, [32m17 hours ago
+[34mf92c54e[31m [37mfeat: ensure SignUpController returns 400 if no password is provided - [36mJoaoPGoes, [32m17 hours ago
+[34mc8ff60f[31m [37mrefactor: simplify code - [36mJoaoPGoes, [32m17 hours ago
+[34m3d42265[31m [37mrefactor: move duplicated code to a helper method - [36mJoaoPGoes, [32m17 hours ago
+[34mdb6f4c5[31m [37mrefactor: add customized error for missing param - [36mJoaoPGoes, [32m18 hours ago
+[34m0c26a32[31m [37mrefactor: ensure SignUpController.handle implement correct interfaces - [36mJoaoPGoes, [32m18 hours ago
+[34mc82b909[31m [37mtest: ensure SignUpController returns 400 if no email is provided - [36mJoaoPGoes, [32m18 hours ago
+[34m17cd13c[31m [37mfeat: ensure SignUpController returns 400 if no email is provided - [36mJoaoPGoes, [32m18 hours ago
+[34m27af6d0[31m [37mtest: ensure SignUpController returns an error if no name is provided - [36mJoaoPGoes, [32m18 hours ago
+[34m1c45ff2[31m [37mfeat: ensure SignUpController returns an error if no name is provided - [36mJoaoPGoes, [32m18 hours ago
+[34mc8ae48b[31m [37mtest: ensure SignUpController returns 400 if no name is provided - [36mJoaoPGoes, [32m18 hours ago
+[34m7c235fd[31m [37mfeat: ensure SignUpController returns 400 if no name is provided - [36mJoaoPGoes, [32m18 hours ago
+[34mbdfb02a[31m [37mchore: add jest to lint staged - [36mJoaoPGoes, [32m19 hours ago
+[34ma18d62e[31m [37mchore: add jest - [36mJoaoPGoes, [32m19 hours ago
+[34m5793a64[31m [37mchore: add husky and lint staged - [36mJoaoPGoes, [32m22 hours ago
+[34m2ab9f74[31m [37mchore: add eslint - [36mJoaoPGoes, [32m22 hours ago
+[34mb016ccf[31m [37mchore: add typescript - [36mJoaoPGoes, [32m22 hours ago
+[34m5edca39[31m [37mchore: add commit linter - [36mJoaoPGoes, [32m22 hours ago
+[34m6da4c64[31m [37mchore: add npm - [36mJoaoPGoes, [32m22 hours ago
