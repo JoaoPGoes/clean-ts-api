@@ -42,7 +42,6 @@ interface SutType {
   sut: SignUpController
   addAccountStub: AddAccount
   validationStub: Validation
-
 }
 
 const makeSut = (): SutType => {
