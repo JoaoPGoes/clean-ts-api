@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/JoaoPGoes/clean-ts-api.svg?branch=master)](https://travis-ci.com/JoaoPGoes/clean-ts-api)
+[![Coverage Status](https://coveralls.io/repos/github/JoaoPGoes/clean-ts-api/badge.svg)](https://coveralls.io/github/JoaoPGoes/clean-ts-api)
+
 # **Clean Node API**
 ---
 
