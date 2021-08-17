@@ -48,7 +48,7 @@ const makeSut = (): SutTypes => {
 
 describe('LoadSurveys Controller', () => {
   beforeAll(() => {
-    MockDate.set(new Date())
+    MockDate.set('2021-1-1')
   })
 
   afterAll(() => {
