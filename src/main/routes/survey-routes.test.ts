@@ -1,14 +1,14 @@
-import request from 'supertest'
-import app from '../config/app'
-import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helper'
+import app from '@/main/config/app'
+import env from '@/main/config/env'
+import { MongoHelper } from '@/infra/db/mongodb/helpers/mongo-helper'
 import { Collection } from 'mongodb'
 import { sign } from 'jsonwebtoken'
-import env from '../config/env'
+import request from 'supertest'
 
 let surveyCollection: Collection
 let accountCollection: Collection
 
-const makeAcessToken = async (): Promise<string> => {
+const makeAccessToken = async (): Promise<string> => {
   const res = await accountCollection.insertOne({
     name: 'Any Name',
     email: 'any_email@mail.com',
@@ -45,7 +45,7 @@ describe('Survey Routes', () => {
   })
 
   describe('POST /surveys', () => {
-    test('Should return 403 on add survey without acessToken', async () => {
+    test('Should return 403 on add survey without AccessToken', async () => {
       await request(app)
         .post('/api/surveys')
         .send({
@@ -60,8 +60,8 @@ describe('Survey Routes', () => {
         .expect(403)
     })
 
-    test('Should return 204 on add survey with valid acessToken', async () => {
-      const accessToken = await makeAcessToken()
+    test('Should return 204 on add survey with valid AccessToken', async () => {
+      const accessToken = await makeAccessToken()
       await request(app)
         .post('/api/surveys')
         .set('x-access-token', accessToken)
@@ -79,14 +79,14 @@ describe('Survey Routes', () => {
   })
 
   describe('GET /surveys', () => {
-    test('Should return 403 on load surveys without acessToken', async () => {
+    test('Should return 403 on load surveys without AccessToken', async () => {
       await request(app)
         .get('/api/surveys')
         .expect(403)
     })
 
-    test('Should return 204 on load surveys with valid acessToken', async () => {
-      const accessToken = await makeAcessToken()
+    test('Should return 204 on load surveys with valid AccessToken', async () => {
+      const accessToken = await makeAccessToken()
       await request(app)
         .get('/api/surveys')
         .set('x-access-token', accessToken)

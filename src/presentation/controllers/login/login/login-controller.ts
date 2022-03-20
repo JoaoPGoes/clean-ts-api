@@ -1,5 +1,5 @@
-import { badRequest, ok, serverError, unauthorized } from '../../../helpers/http/http-helper'
 import { Controller, HttpRequest, HttpResponse, Authetication, Validation } from './login-controller-protocols'
+import { badRequest, ok, serverError, unauthorized } from '@/presentation/helpers/http/http-helper'
 
 export class LoginController implements Controller {
   constructor (
@@ -14,14 +14,14 @@ export class LoginController implements Controller {
         return badRequest(error)
       }
       const { email, password } = httpRequest.body
-      const acessToken = await this.authentication.auth({
+      const accessToken = await this.authentication.auth({
         email,
         password
       })
-      if (!acessToken) {
+      if (!accessToken) {
         return unauthorized()
       }
-      return ok({ acessToken })
+      return ok({ accessToken })
     } catch (error) {
       return serverError(error)
     }
